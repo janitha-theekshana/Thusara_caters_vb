@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9F9005B9-F8EB-43ED-AFB7-33511D158CE8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Thusara_caters.My.MyApplication</StartupObject>
+    <RootNamespace>Thusara_caters</RootNamespace>
+    <AssemblyName>Thusara_caters</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Thusara_caters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Thusara_caters.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\first page.Designer.vb">
+      <DependentUpon>first page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="..\first page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin logging.Designer.vb">
+      <DependentUpon>admin logging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin logging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogging.Designer.vb">
+      <DependentUpon>adminlogging.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogging.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alms_giving_brownze.Designer.vb">
+      <DependentUpon>Alms_giving_brownze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alms_giving_brownze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alms_giving_gold.Designer.vb">
+      <DependentUpon>Alms_giving_gold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alms_giving_gold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="alms_giving_package.Designer.vb">
+      <DependentUpon>alms_giving_package.vb</DependentUpon>
+    </Compile>
+    <Compile Include="alms_giving_package.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Alms_giving_silver.Designer.vb">
+      <DependentUpon>Alms_giving_silver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Alms_giving_silver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer details.Designer.vb">
+      <DependentUpon>Customer details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="customer_form.Designer.vb">
+      <DependentUpon>customer_form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customer_form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Order.Designer.vb">
+      <DependentUpon>Edit Order.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit Order.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee details.Designer.vb">
+      <DependentUpon>Employee details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Employee details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_DBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmloading.Designer.vb">
+      <DependentUpon>frmloading.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmloading.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainpage.Designer.vb">
+      <DependentUpon>Mainpage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Mainpage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu page.Designer.vb">
+      <DependentUpon>Menu page.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Menu page.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="other_brownze.Designer.vb">
+      <DependentUpon>other_brownze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="other_brownze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_gold.Designer.vb">
+      <DependentUpon>other_gold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="other_gold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_party_package.Designer.vb">
+      <DependentUpon>other_party_package.vb</DependentUpon>
+    </Compile>
+    <Compile Include="other_party_package.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="other_silver.Designer.vb">
+      <DependentUpon>other_silver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="other_silver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Photo1.Designer.vb">
+      <DependentUpon>Photo1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Photo1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Photo2.Designer.vb">
+      <DependentUpon>Photo2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Photo2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Photo4.Designer.vb">
+      <DependentUpon>Photo4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Photo4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Photos.Designer.vb">
+      <DependentUpon>Photos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Photos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Photos3.Designer.vb">
+      <DependentUpon>Photos3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Photos3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wedding_brownze.Designer.vb">
+      <DependentUpon>wedding_brownze.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wedding_brownze.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wedding_gold.Designer.vb">
+      <DependentUpon>Wedding_gold.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Wedding_gold.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wedding_package.Designer.vb">
+      <DependentUpon>wedding_package.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wedding_package.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wedding_silver.Designer.vb">
+      <DependentUpon>wedding_silver.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wedding_silver.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="..\first page.resx">
+      <DependentUpon>first page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin logging.resx">
+      <DependentUpon>admin logging.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alms_giving_brownze.resx">
+      <DependentUpon>Alms_giving_brownze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alms_giving_gold.resx">
+      <DependentUpon>Alms_giving_gold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="alms_giving_package.resx">
+      <DependentUpon>alms_giving_package.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Alms_giving_silver.resx">
+      <DependentUpon>Alms_giving_silver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer details.resx">
+      <DependentUpon>Customer details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer_form.resx">
+      <DependentUpon>customer_form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit Order.resx">
+      <DependentUpon>Edit Order.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee details.resx">
+      <DependentUpon>Employee details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmloading.resx">
+      <DependentUpon>frmloading.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainpage.resx">
+      <DependentUpon>Mainpage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu page.resx">
+      <DependentUpon>Menu page.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_brownze.resx">
+      <DependentUpon>other_brownze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_gold.resx">
+      <DependentUpon>other_gold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_party_package.resx">
+      <DependentUpon>other_party_package.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="other_silver.resx">
+      <DependentUpon>other_silver.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photo1.resx">
+      <DependentUpon>Photo1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photo2.resx">
+      <DependentUpon>Photo2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photo4.resx">
+      <DependentUpon>Photo4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photos.resx">
+      <DependentUpon>Photos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Photos3.resx">
+      <DependentUpon>Photos3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wedding_brownze.resx">
+      <DependentUpon>wedding_brownze.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wedding_gold.resx">
+      <DependentUpon>Wedding_gold.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wedding_package.resx">
+      <DependentUpon>wedding_package.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wedding_silver.resx">
+      <DependentUpon>wedding_silver.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomerDataSet.xsc">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CustomerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CustomerDataSet.xss">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_DBDataSet.xsc">
+      <DependentUpon>Employee_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Employee_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Employee_DBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Employee_DBDataSet.xss">
+      <DependentUpon>Employee_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\782F66F0-92CC-4216-B2ED-BEEEBF563F71.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\2017-03-12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\2017-03-24 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\2017-03-24.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\ACFB99A3-F62A-4EE1-8FA3-61BD0A78F482.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resource\loading img.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
